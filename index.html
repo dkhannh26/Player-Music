@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <div class="music-audio">
+        <div class="music-thumb">
+            <img src="https://source.unsplash.com/random" alt="" id="music-img">
+        </div>
+        <h3 id="music-name">Beautiful</h3>
+        <input type="range"  name="range" id="range" class="range">
+        <audio src="./music/holo.mp3" id="song"></audio>
+        <div class="timer">
+            <div class="duration">2:10</div>
+            <div class="remaining">3:10</div>
+        </div>
+        <div class="music-wave">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="controls">
+            <div class="div-volume" style="display: grid;">
+                <input type="range" name="volume" id="volume-range">
+                <ion-icon name="volume-medium-outline" id="volume-icon"></ion-icon>               
+            </div>
+           
+            <ion-icon name="play-back-circle-outline" id="play-prev"></ion-icon>
+            <div class="play">
+                <div class="play-inner">
+
+                    <ion-icon name="play-circle-outline"  id="play-icon"></ion-icon>
+                    
+
+                </div>
+            </div>
+            <ion-icon name="play-forward-circle-outline" id="play-next"></ion-icon>
+            <ion-icon name="repeat-outline" id="repeat-icon"></ion-icon>
+        </div>
+    </div>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NQPmjr2Lg0inK8MJoLf9MPxwVZ6z0r_ZNRb5qNjuz05_12r-EHCmsk8uwrLA8M0fvKg&usqp=CAU" 
+    alt="" id="author">
+
+    <div class="play-list">
+        
+    </div>
+    <div class="hot-list">
+        <h1>Chủ đề hot > </h1>
+        <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2022/12/05/7/0/8/c/1670222063795_org.jpg" alt="" id="sad-songs">
+        <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2020/06/18/9/5/f/7/1592449943996_org.jpg" alt="">
+        <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2020/06/15/b/1/e/6/1592214676121_org.jpg" alt="">
+        <img src="https://avatar-ex-swe.nixcdn.com/topic/thumb/2020/08/13/f/d/9/1/1597291766331_org.jpg" alt="" id="all-songs">
+    </div>
+
+    <script src="./App.js"></script>
+</body>
+
+</html>
